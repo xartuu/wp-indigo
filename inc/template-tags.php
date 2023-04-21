@@ -588,7 +588,7 @@ if ( ! function_exists('wp_indigo_get_profile_image')) :
 	  */
 	function wp_indigo_get_profile_image() {
 
-		$wp_indigo_image = wp_get_attachment_image_src(get_theme_mod( 'profile_image' )["id"] , 'medium');
+		$wp_indigo_image = wp_get_attachment_image_src(get_theme_mod( 'profile_image' )["id"] , 'large');
 
 		/** translator %s: image src, translator %s 2: image srcset */
 		echo sprintf('<img alt="%s" src="%s" />', esc_attr__( 'Profile image' , 'wp-indigo' ) ,esc_attr($wp_indigo_image[0]) );
