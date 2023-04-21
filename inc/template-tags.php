@@ -426,7 +426,7 @@ if ( ! function_exists( 'wp_indigo_branding' ) ) :
 		}
 		else{
 			/** trnslator %s: link address, translator %s 2: Site title  */
-			echo sprintf('<h1 class="c-header__title site-title"><a href="%s" rel="home">%s</a></h1>',esc_url( home_url( '/' ) ), esc_html(get_bloginfo( 'name' )));
+			echo sprintf('<div class="c-header__title site-title h1"><a href="%s" rel="home">%s</a></div>',esc_url( home_url( '/' ) ), esc_html(get_bloginfo( 'name' )));
 		}
 
 	}

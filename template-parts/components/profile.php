@@ -20,11 +20,11 @@
         </div>
     <?php endif; ?>
 
-    <div class="c-profile__title">
-        <a class="c-profile__title__link h1" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <h1 class="c-profile__title">
+        <a class="c-profile__title__link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <?php esc_html(bloginfo( 'name' )); ?>
         </a>
-    </div>
+    </h1>
 
     <div class="c-profile__desc">
         <?php wp_indigo_show_description(); ?>
