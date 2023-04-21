@@ -588,7 +588,7 @@ if ( ! function_exists('wp_indigo_get_profile_image')) :
 	  */
 	function wp_indigo_get_profile_image() {
 
-		$wp_indigo_image = wp_get_attachment_image_src(get_theme_mod( 'profile_image' )["id"] , 'thumbnail');
+		$wp_indigo_image = wp_get_attachment_image_src(get_theme_mod( 'profile_image' )["id"] , 'medium');
 
 		/** translator %s: image src, translator %s 2: image srcset */
 		echo sprintf('<img alt="%s" src="%s" />', esc_attr__( 'Profile image' , 'wp-indigo' ) ,esc_attr($wp_indigo_image[0]) );
@@ -660,7 +660,7 @@ if ( ! function_exists( 'wp_indigo_get_footer_menu_class' ) ) :
 		elseif( get_theme_mod( 'footer_menu_pos' , 'center') == 'bottom'  ){
 			echo esc_attr( 'c-footer__copy--bottom' );
 		}
-		else { 
+		else {
 			echo esc_attr( 'c-footer__copy--normal' );
 		}
 
@@ -693,7 +693,7 @@ if ( ! function_exists( 'wp_indigo_get_date_class' ) ) :
 		if( get_theme_mod( 'blog_date_alignment' , 'front_title') == 'front_category' && get_theme_mod( 'archives_posts_category', true ) === false ) {
 			echo esc_attr( 'c-post__date--full-width' );
 		}
-		
+
 	}
 endif;
 
@@ -738,7 +738,7 @@ if ( ! function_exists( 'wp_indigo_show_post_nav' ) ) :
 						<div class="c-single__nav-date h5"><span class="h6">'.get_the_date().'</span></div>
 						</div>
 					</div>
-				  
+
 				</div>',
 			)
 		);
@@ -748,9 +748,9 @@ endif;
 if ( ! function_exists('wp_indigo_show_description')) {
 	function wp_indigo_show_description() {
 		/**
-		 * Display Description for profile section 
+		 * Display Description for profile section
 		 */
-		if ( get_bloginfo( 'description' ) !== '' ) { 
+		if ( get_bloginfo( 'description' ) !== '' ) {
 			/** translator %s: Blog info description */
 			echo sprintf('<h4 class="description">%s</h4>' ,  esc_html(get_bloginfo( 'description' )));// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
@@ -758,9 +758,9 @@ if ( ! function_exists('wp_indigo_show_description')) {
 }
 
 
-if( ! function_exists('wp_indigo_get_search') ) : 
-	function wp_indigo_get_search() { 
-		if( get_theme_mod( 'display_search_icon', false ) === true  ) { 
+if( ! function_exists('wp_indigo_get_search') ) :
+	function wp_indigo_get_search() {
+		if( get_theme_mod( 'display_search_icon', false ) === true  ) {
 			echo sprintf( '<div class="c-header__search">
 			<button class="c-header__search-icon-btn js-header__search-icon-btn" aria-label="%s" aria-controls="c-header__search__form-box" aria-expanded="false">
 			<span class="u-link--secondary c-header__search-icon iconify" data-icon="bx:search-alt-2"></span></button></div>' ,

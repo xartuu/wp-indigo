@@ -2145,8 +2145,8 @@ select {
   opacity: var(--wp_indigo_animation); }
 
 .c-profile__image {
-  width: 106px;
-  height: 106px;
+  width: 176px;
+  height: 176px;
   display: inline-block; }
   @media only screen and (min-width: 980px) {
     .c-profile__image {
