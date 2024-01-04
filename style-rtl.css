@@ -2617,27 +2617,27 @@ input[type="checkbox"]:checked:before {
 /*------------------------------------*\
     #Social Share
   \*------------------------------------*/
-.c-social-share {
+.c-social-links {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.c-social-share--footer {
+.c-social-links--footer {
     padding-bottom: 35px;
 }
 
-.c-social-share__title {
+.c-social-links__title {
     text-transform: uppercase;
     color: var(--wp_indigo_secondary-color);
 }
 
-.c-social-share__items {
+.c-social-links__items {
     display: flex;
     flex-direction: row;
 }
 
-.c-social-share__item {
+.c-social-links__item {
     margin: 0px 12.5px;
     font-size: 20px;
     display: flex;
@@ -2880,11 +2880,11 @@ input[type="submit"]:focus {
         padding-top: 0px;
     }
 }
-.o-page__content--center .c-social-share {
+.o-page__content--center .c-social-links {
     padding-top: 16px;
 }
 @media only screen and (min-width: 980px) {
-    .o-page__content--center .c-social-share {
+    .o-page__content--center .c-social-links {
         padding-top: 72px;
     }
 }

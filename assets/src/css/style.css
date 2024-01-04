@@ -2720,35 +2720,35 @@ ol.children {
 /*---------------------------------*\
   #Social Share
 \*---------------------------------*/
-.c-social-share {
+.c-social-links {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px; }
 
-.c-social-share__icon {
+.c-social-links__icon {
   transition: 0s; }
-  .c-social-share__icon g {
+  .c-social-links__icon g {
     transition: 0s; }
-  .c-social-share__icon path {
+  .c-social-links__icon path {
     transition: 0s all; }
 
-.c-social-share__title {
+.c-social-links__title {
   text-transform: uppercase;
   color: var(--wp_indigo_secondary-color);
   margin-top: 4px; }
 
-.c-social-share__items {
+.c-social-links__items {
   display: flex;
   flex-direction: row; }
 
-.c-social-share__item {
+.c-social-links__item {
   margin: 0px 5px;
   font-size: 20px;
   display: flex;
   align-items: center; }
-  .c-social-share__item:first-child {
+  .c-social-links__item:first-child {
     margin-left: 4px; }
 
 /* Footer
@@ -3123,8 +3123,8 @@ input[type="submit"] {
   .o-page__content--center .c-main {
     padding-bottom: 0px;
     padding-top: 0px; }
-  .o-page__content--center .c-social-share {
+  .o-page__content--center .c-social-links {
     padding-top: 16px; }
     @media only screen and (min-width: 980px) {
-      .o-page__content--center .c-social-share {
+      .o-page__content--center .c-social-links {
         padding-top: 72px; } }
