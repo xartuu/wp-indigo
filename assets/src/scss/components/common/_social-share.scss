@@ -1,7 +1,7 @@
 /*---------------------------------*\
   #Social Share
 \*---------------------------------*/
-.c-social-share {
+.c-social-links {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     gap: 12px;
 }
 
-.c-social-share__icon {
+.c-social-links__icon {
     transition: 0s;
 
     g {
@@ -20,17 +20,17 @@
     }
 }
 
-.c-social-share__title {
+.c-social-links__title {
     text-transform: uppercase;
     color: $wp_indigo_secondary_color;
     margin-top: 4px;
 }
 
-.c-social-share__items {
+.c-social-links__items {
     display: flex;
     flex-direction: row;
 }
-.c-social-share__item {
+.c-social-links__item {
     margin: 0px 5px;
     font-size: 20px;
     display: flex;
